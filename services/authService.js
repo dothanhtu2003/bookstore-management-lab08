@@ -2,6 +2,7 @@ const bcrypt = require("bcryptjs");
 const users = [];
 let nextId = 1;
 
+// --- YOUR PART: REGISTER ---
 async function register(username, password) {
     if (typeof username !== "string" || typeof password !== "string") {
         throw new Error("Tên đăng nhập và mật khẩu phải là chuỗi");
@@ -23,6 +24,7 @@ async function register(username, password) {
     return { id: user.id, username: user.username };
 }
 
+// --- EMMY'S PART: LOGIN ---
 async function login(username, password) {
     if (typeof username !== "string" || typeof password !== "string") {
         throw new Error("Tên đăng nhập và mật khẩu là bắt buộc");
