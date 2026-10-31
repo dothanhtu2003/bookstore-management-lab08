@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1793432818540" clover="3.2.0">
+  <project timestamp="1793432818540" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="21" coveredconditionals="20" methods="1" coveredmethods="1" elements="35" coveredelements="34" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+    <file name="sales.js" path="C:\Users\admin\bookstore-management-lab08\sales.js">
+      <metrics statements="13" coveredstatements="13" conditionals="21" coveredconditionals="20" methods="1" coveredmethods="1"/>
+      <line num="2" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="17" count="6" type="stmt"/>
+      <line num="18" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="30" count="4" type="stmt"/>
+      <line num="33" count="3" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
