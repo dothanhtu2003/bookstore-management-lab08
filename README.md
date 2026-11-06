@@ -51,3 +51,40 @@ npm test -- --coverage
 ```
 
 **Repository:** https://github.com/dothanhtu2003/bookstore-management-lab08
+
+---
+
+# LAB09 – Unit Testing & Code Coverage
+
+Tiếp tục dự án Lab08, nhóm thiết kế **Test Cases**, viết **Unit Test bằng Jest** và đo **Code Coverage** cho các module nghiệp vụ.
+
+## Phân công kiểm thử
+
+| Thành viên | Module | Test Cases |
+|---|---|---:|
+| **Đỗ Thanh Tú** | Quản lý tồn kho: nhập, xuất, kiểm tra tồn | 15 |
+| **Phommasone Panadda** | Sản phẩm: kiểm tra giá, số lượng | 12 |
+| **Su Nay Yee Nwe** | Đăng nhập: xác thực và dữ liệu không hợp lệ | 7 |
+| **Shinn Thant** | Bán hàng: tính tổng tiền và giảm giá | 9 |
+
+## Cấu trúc kiểm thử Lab09
+
+```text
+inventory.js             # Nghiệp vụ tồn kho
+product.js               # Nghiệp vụ sản phẩm
+sales.js                 # Nghiệp vụ bán hàng
+services/authService.js  # Nghiệp vụ xác thực
+test/auth.test.js        # Unit Test đăng nhập
+tests/inventory.test.js  # Unit Test tồn kho
+tests/product.test.js    # Unit Test sản phẩm
+tests/sales.test.js      # Unit Test bán hàng
+```
+
+## Chạy Unit Test
+
+```bash
+npm ci
+npx jest --coverage --runInBand
+```
+
+**Kết quả đã xác nhận trước khi tích hợp module Sản phẩm:** 31/31 Tests PASS; Statements 91.35%, Branches 87.83%, Functions 91.66%, Lines 92.40%. Sau khi bổ sung Sản phẩm, cần chạy lại Jest để xác nhận toàn bộ 43 Test Cases.
